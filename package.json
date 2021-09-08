@@ -26,10 +26,9 @@
     "npm": "6.12.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development",
     "postinstall": "webpack",
-    "build": "webpack —mode=production"
+    "webpack": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
