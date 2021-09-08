@@ -10,6 +10,7 @@ const App = ({ store }) => {
       <div className="sipper-content">
         <div className="logo">
           <h1>Sipper</h1>
+          <img src={window.logoUrl} alt="gossip" />
         </div>
         <SipFormContainer />
         <SipIndexContainer />
