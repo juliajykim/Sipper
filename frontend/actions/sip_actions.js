@@ -10,6 +10,7 @@ export const receiveSip = (sip) => {
   };
 };
 
+
 export const receiveSips = (sips) => {
   // if we used "payload" instead of "{sips, user}"
   // const {sips, user} = payload // would also create variables sips and user with the correct values
