@@ -1,0 +1,17 @@
+<h1>All the sips!</h1>
+
+<ul>
+  <% @sips.each do |sip| %>
+    <li>
+      <div>
+        <%= sip.body %> - 
+        <a href="<%= user_url(sip.author)%>">
+          <%= sip.author.username %>
+        </a>
+      </div>
+      <div>
+        Posted at: <%= sip.created_at.to_formatted_s(:rfc822).slice(0, 25) %>
+      </div>
+    </li>
+  <% end %>
+</ul>

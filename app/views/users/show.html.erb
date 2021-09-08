@@ -1,0 +1,8 @@
+<h1>User Showpage</h1>
+
+<%= render "users/user", user: @user, action: "show" %>
+
+<form action="<%=user_url(@user)%>" method="POST">
+<input type="hidden" name="_method" value="DELETE">
+<button>DELETE USER!!!!!</button>
+</form>
